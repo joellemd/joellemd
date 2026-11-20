@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="330" viewBox="0 0 820 330" role="img" aria-label="Terminal listing highlighted merged pull requests">
+  <title>git log of highlighted merged PRs</title>
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; font-size: 14px; }
+    .win   { fill: #0d1117; stroke: #30363d; }
+    .bar   { fill: #161b22; }
+    .wt    { fill: #9198a1; font-size: 12px; }
+    .p     { fill: #3fb950; }
+    .cmd   { fill: #e6edf3; }
+    .ok    { fill: #ab7df8; }
+    .ref   { fill: #79c0ff; }
+    .msg   { fill: #c9d1d9; }
+    .sum   { fill: #9198a1; }
+    .hl    { fill: #f778ba; font-weight: 700; }
+    .cur   { fill: #e6edf3; }
+
+    /* typing: a cover rect slides right in character steps (44 chars × 8.4px) */
+    @keyframes type  { from { transform: translateX(0);} to { transform: translateX(370px);} }
+    @keyframes show  { from { opacity:0; transform: translateX(-6px);} to { opacity:1; transform:none;} }
+    @keyframes blink { 0%,49% { opacity:1;} 50%,100% { opacity:0;} }
+    @keyframes ride  { from { transform: translateX(0);} to { transform: translateX(370px);} }
+    @keyframes hide  { to { opacity:0; } }
+
+    .cover { animation: type 2s steps(44) .4s both; }
+    .tcur  { animation: ride 2s steps(44) .4s both, hide .01s 2.45s forwards; }
+    .l     { animation: show .35s ease-out both; }
+    .l1 { animation-delay: 2.7s; } .l2 { animation-delay: 3.0s; } .l3 { animation-delay: 3.3s; }
+    .l4 { animation-delay: 3.6s; } .l5 { animation-delay: 3.9s; } .l6 { animation-delay: 4.2s; }
+    .l7 { animation-delay: 4.7s; } .l8 { animation-delay: 5.0s; }
+    .blink { animation: blink 1.1s step-end 5.0s infinite; }
+  </style>
+
+  <rect class="win" x="0.5" y="0.5" width="819" height="329" rx="12"/>
+  <path class="bar" d="M12.5 .5h795a12 12 0 0 1 12 12v24H.5v-24a12 12 0 0 1 12-12z"/>
+  <circle cx="22" cy="18" r="6" fill="#ff5f57"/>
+  <circle cx="42" cy="18" r="6" fill="#febc2e"/>
+  <circle cx="62" cy="18" r="6" fill="#28c840"/>
+  <text class="wt" x="410" y="22" text-anchor="middle">~/upstream — zsh</text>
+
+  <!-- command line with typing effect -->
+  <text x="24" y="72"><tspan class="p">❯ </tspan><tspan class="cmd">git log --author=joellemd --merged --oneline</tspan></text>
+  <rect class="cover" x="44" y="56" width="400" height="22" fill="#0d1117"/>
+  <rect class="cur tcur" x="44" y="58" width="8" height="18"/>
+
+  <!-- output -->
+  <text class="l l1" x="24" y="106"><tspan class="ok">✓ </tspan><tspan class="ref">flutter/flutter#196465</tspan><tspan class="msg" x="282">package dotfiles after AGP's asset merge</tspan></text>
+  <text class="l l2" x="24" y="132"><tspan class="ok">✓ </tspan><tspan class="ref">babel/babel#18628</tspan><tspan class="msg" x="282">keep `await using` in for-of heads</tspan></text>
+  <text class="l l3" x="24" y="158"><tspan class="ok">✓ </tspan><tspan class="ref">babel/babel#18195</tspan><tspan class="msg" x="282">fix closure bindings in for-loop init</tspan></text>
+  <text class="l l4" x="24" y="184"><tspan class="ok">✓ </tspan><tspan class="ref">canonical/lxd#19521</tspan><tspan class="msg" x="282">unescape entity URLs only once</tspan></text>
+  <text class="l l5" x="24" y="210"><tspan class="ok">✓ </tspan><tspan class="ref">canonical/lxd-ui#2460</tspan><tspan class="msg" x="282">decode resource URLs only once</tspan></text>
+  <text class="l l6" x="24" y="236"><tspan class="ok">✓ </tspan><tspan class="ref">canonical/multipass#5144</tspan><tspan class="msg" x="282">gate Windows driver behind HYPERV_HCS_ENABLED</tspan></text>
+
+  <text class="l l7" x="24" y="272"><tspan class="sum">── </tspan><tspan class="hl">23 merged</tspan><tspan class="sum"> · babel · canonical · flutter · apache</tspan></text>
+
+  <g class="l l8">
+    <text x="24" y="306"><tspan class="p">❯ </tspan></text>
+    <rect class="cur blink" x="44" y="292" width="8" height="18"/>
+  </g>
+</svg>
