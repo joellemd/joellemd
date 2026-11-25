@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="820" height="320" viewBox="0 0 820 320" role="img" aria-label="Merged upstream: 29 pull requests across Babel, Canonical, Flutter and Apache ShardingSphere">
-  <title>Merged upstream: 29 PRs across 4 projects</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="320" viewBox="0 0 820 320" role="img" aria-label="Merged upstream: 30 pull requests across Babel, Canonical, Flutter and Apache ShardingSphere">
+  <title>Merged upstream: 30 PRs across 4 projects</title>
   <defs>
     <linearGradient id="shine" x1="0" x2="1" y1="0" y2="0">
       <stop offset="0" stop-color="#fff" stop-opacity="0"/>
@@ -57,7 +57,7 @@
   </g>
 
   <g class="stat">
-    <text class="big" x="788" y="62" text-anchor="end">29</text>
+    <text class="big" x="788" y="62" text-anchor="end">30</text>
     <text class="bigl" x="788" y="82" text-anchor="end">MERGED PRs · 4 PROJECTS</text>
   </g>
 
@@ -71,10 +71,10 @@
   </g>
   <g class="row r2">
     <text class="name" x="32" y="182">Canonical</text>
-    <text class="tag" x="32" y="200">LXD · Multipass · Desktop Provision</text>
+    <text class="tag" x="32" y="200">LXD · Multipass · Ubuntu desktop</text>
     <rect class="track" x="240" y="180" width="420" height="12" rx="6"/>
-    <rect class="bar fill" x="240" y="180" width="263" height="12" rx="6"/>
-    <text class="count" x="788" y="191" text-anchor="end">10 merged</text>
+    <rect class="bar fill" x="240" y="180" width="289" height="12" rx="6"/>
+    <text class="count" x="788" y="191" text-anchor="end">11 merged</text>
   </g>
   <g class="row r3">
     <text class="name" x="32" y="234">Flutter</text>
